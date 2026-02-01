@@ -1,2 +1,2 @@
 # ux-team-demo
-UX Team demo version | learning version
+UX Team demo version | learning version.
