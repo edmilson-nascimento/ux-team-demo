@@ -1,0 +1,10 @@
+CLASS zbp_i_uxteam_ej DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF zi_uxteam_ej.
+
+protected section.
+private section.
+ENDCLASS.
+
+
+
+CLASS ZBP_I_UXTEAM_EJ IMPLEMENTATION.
+ENDCLASS.

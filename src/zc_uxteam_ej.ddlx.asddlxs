@@ -1,0 +1,58 @@
+@Metadata.layer: #CORE
+//@UI.note.type.languageDependent: 'EN'
+
+@UI.headerInfo: { typeName: 'UX Team',
+//@UI.headerInfo: { typeName: 'f{=ZCL_UXTEAM_TEXTS.SALES_ORDER}',
+//@UI.headerInfo: { typeName: '{$Text.KEY:HEADERINFO}',
+                  typeNamePlural: 'UX Team | Header List',
+//                  typeNamePlural: '{=ZCL_UXTEAM_TEXTS.001}',
+                  title: { type: #STANDARD, label: 'UXTeam', value: 'Id' } }
+
+@UI.presentationVariant: [ { sortOrder: [ { by: 'Id', direction: #ASC } ] } ]
+
+annotate view ZC_UXTEAM_EJ with
+
+{
+  @UI.facet: [ { id: 'UXDemo',
+                 purpose: #STANDARD,
+                 type: #IDENTIFICATION_REFERENCE,
+                 label: 'UX Team | Detail',
+                 position: 10 } ]
+  @UI.identification: [ { position: 1, label: 'Id' } ]
+  Id;
+
+  @UI.identification: [ { position: 20 } ]
+  @UI.lineItem: [ { position: 20 } ]
+  @UI.selectionField: [ { position: 20 } ]
+  Firstname;
+
+  @UI.identification: [ { position: 30 } ]
+  @UI.lineItem: [ { position: 30 } ]
+  @UI.selectionField: [ { position: 30 } ]
+  Lastname;
+
+  @UI.identification: [ { position: 40 } ]
+  @UI.lineItem: [ { position: 40 } ]
+  Age;
+
+  @UI.identification: [ { position: 50 } ]
+  @UI.lineItem: [ { position: 50 } ]
+  Role;
+
+  @UI.identification: [ { position: 60 } ]
+  @UI.lineItem: [ { position: 60 } ]
+  @UI.selectionField: [ { position: 60 } ]
+  Salary;
+
+  @UI.identification: [ { position: 70 },
+                        { type: #FOR_ACTION, dataAction: 'setActive', label: 'Set Active' } ]
+  @UI.lineItem: [ { position: 70 },
+                  { type: #FOR_ACTION, dataAction: 'setActive', label: 'Set Active' } ]
+  Active;
+
+  @UI.hidden: true
+  LastChangedAt;
+
+  @UI.hidden: true
+  LocalLastChangedAt;
+} 
