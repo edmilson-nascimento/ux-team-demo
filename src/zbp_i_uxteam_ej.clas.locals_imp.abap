@@ -125,7 +125,7 @@ CLASS lhc_zi_uxteam_ej IMPLEMENTATION.
       IF member-Age < 21.
         " Does not continue anymore | failed
         APPEND VALUE #( %tky = member-%tky ) TO failed-uxteam.
-        " Recomendo even you not use draft | %tky | Table Key
+        " Recomend even you not use draft | %tky | Table Key
       ENDIF.
 
     ENDLOOP.
